@@ -1,0 +1,20 @@
+div.dg {
+  font: 12px 'minecraftfont' 
+}
+
+.dg .cr.string {
+}
+
+.alertify-log {
+  font: 12px 'minecraftfont' 
+}
+
+select {
+  height: 2em;
+  padding: 0;
+}
+
+input[type="text"] {
+  height: 2em;
+  padding: 0;
+}
