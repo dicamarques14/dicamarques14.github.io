@@ -420,7 +420,7 @@ var Dash = function() {
     this.curIndex = Math.floor(x);
   
     //if(this.curMode == "kirokaze") {
-    showBanner(true)
+    //showBanner(true)
     //}
 
      
