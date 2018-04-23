@@ -1,4 +1,14 @@
-{ "name": "8bitdash Progressive Web App", "short_name": "8bitdashPWA", "description": " Web App example to on.", 
-"icons": [ { "src": "favicon.ico","sizes": "32x32", "type": "image/ico" }],
-
-"start_url": "/index.html", "display": "fullscreen", "theme_color": "#B12A34", "background_color": "#B12A34" }
+{ 
+  "name":"8bitdash Progressive Web App",
+  "short_name":"8bitdashPWA",
+  "description": " Web App example to on.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#08ff00",
+  "background_color": "#fff",
+  "icons": [{
+    "src": "favicon.ico",
+    "sizes": "64x64",
+    "type": "image/ico"
+  }]
+}
