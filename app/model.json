@@ -1,0 +1,53 @@
+{
+    "directory_revision":{
+        "settings" :{
+            "network" : "",
+            "region" : "",
+            "nodes" : ["",""], 
+            "level" : {
+                "type" : "",
+                "options":{"client" : "","start_date":"","end_date":""}
+            },
+            "publish_state" : ""
+        },
+
+        "activity_hours" : [
+            {"start_time":"","end_time":"","weekday":["",""]}
+        ],
+        "categories" : ["",""],
+        "accessible" : 1,
+        "highlight" : 1,
+        "contacts":{
+            "phone" : 232111111,
+            "email" : "aaa@aaa.com",
+            "email_backup" : "aaa@aaa.com",
+            "website" : "www.aaa.com",
+            "address" : "Street n1",
+            "latitude" : "",
+            "longitude" : ""
+        },
+
+        "images" : [
+            {"path":"","featured_image":""}
+        ],
+
+
+        "name":[
+            {"lang":"pt","text":"Café"}
+        ],
+        "description" : [
+            {"lang":"pt","text":"Bom Café"}
+        ],
+        "tags" : [
+            {"lang":"pt","items":["cafe","cha"]}
+        ],
+        "qr_code": [
+            {"lang":"pt", "label" : "" , "content" : ""},
+            {"lang":"pt", "label" : "" , "content" : ""}
+        ],
+        
+        "meta": [
+            {"category":"", "value":""}
+        ]
+    }
+}

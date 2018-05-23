@@ -1,0 +1,391 @@
+{
+  "type" : "FeatureCollection", 
+  "crs" : 
+  {
+    "type" : "name", 
+    "properties" : 
+    {
+      "name" : "EPSG:3857"
+    }
+  }, 
+  "features" : [
+    {
+      "type" : "Feature", 
+      "id" : 1, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -1012652.9017, 4688451.0539
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 1, 
+        "COD_SIG" : "3308507001001", 
+        "IDTIPO" : "2", 
+        "INF_NOME" : "NOS Vasco da Gama", 
+        "INF_MORADA" : "C.C. Vasco da Gama \nAv. D. João II, Parque das Nações \n1998-014 Lisboa", 
+        "INF_TELEFONE" : "16996", 
+        "INF_FAX" : null, 
+        "INF_EMAIL" : "cinema.vgama@nos.pt", 
+        "INF_SITE" : "http://cinemas.nos.pt/", 
+        "INF_DESCRICAO" : "Situadas no Centro Comercial Vasco da Gama. \n", 
+        "INF_FONTE" : "http://cinemas.nos.pt/", 
+        "INF_MUNICIPAL" : 0, 
+        "DTM_UPD" : 1489655061000, 
+        "GlobalID" : "25d036af-814d-4a06-a170-0f6956e9aee2"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 2, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -1017238.8426, 4685023.3915
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 2, 
+        "COD_SIG" : "4300801026001", 
+        "IDTIPO" : "2", 
+        "INF_NOME" : "Fórum Lisboa", 
+        "INF_MORADA" : "Avenida de Roma, 14P", 
+        "INF_TELEFONE" : "+351 218 170 400", 
+        "INF_FAX" : null, 
+        "INF_EMAIL" : "aml@cm-lisboa.pt", 
+        "INF_SITE" : "www.am-lisboa.pt", 
+        "INF_DESCRICAO" : null, 
+        "INF_FONTE" : "www.am-lisboa.pt", 
+        "INF_MUNICIPAL" : 1, 
+        "DTM_UPD" : 1487767333000, 
+        "GlobalID" : "9beeaaa5-44c0-4ac5-9a20-036e6076f03f"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 3, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -1017929.7918, 4680293.5971
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 3, 
+        "COD_SIG" : "1501101003001", 
+        "IDTIPO" : "2", 
+        "INF_NOME" : "Cinema Ideal", 
+        "INF_MORADA" : "Rua do Loreto, 15", 
+        "INF_TELEFONE" : "+351 210 998 295", 
+        "INF_FAX" : null, 
+        "INF_EMAIL" : "cinemaideal@cinemaideal.pt", 
+        "INF_SITE" : "www.cinemaideal.pt", 
+        "INF_DESCRICAO" : "Esta sala de cinema, aberta desde 1904, conheceu ao longo dos anos diversas designações - Salão Ideal, Cinema Ideal, Cine Camões e Cine Paraíso. O sspaço sofreu uma grande remodelação nos anos 50, mas conservou todo o charme de um ¿cinema de bairro¿, com o seu foyer, balcão e plateia. Em agosto de 2014 reabriu como Cinema Ideal, depois de um profundo trabalho de renovação e recuperação, de arquitetura e de equipamento de projeção de imagem e som. ", 
+        "INF_FONTE" : "-", 
+        "INF_MUNICIPAL" : 0, 
+        "DTM_UPD" : 1521119068000, 
+        "GlobalID" : "faed8784-3509-4e5f-be16-ad2141e75d6c"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 4, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -1018259.7289, 4683881.8433
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 4, 
+        "COD_SIG" : "2305004003001", 
+        "IDTIPO" : "2", 
+        "INF_NOME" : "Medeia Espaço Nimas", 
+        "INF_MORADA" : "Avenida Cinco de Outubro, 42B", 
+        "INF_TELEFONE" : "+351 213 574 362", 
+        "INF_FAX" : null, 
+        "INF_EMAIL" : "espaconimas@gmail.com", 
+        "INF_SITE" : "http://medeiafilmes.com/cinemas/ver/espaco-nimas-lisboa/", 
+        "INF_DESCRICAO" : null, 
+        "INF_FONTE" : "-", 
+        "INF_MUNICIPAL" : 0, 
+        "DTM_UPD" : 1508783079000, 
+        "GlobalID" : "49805f4e-77e9-49ca-a3d7-6a248f4f3b59"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 5, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -1018105.0424, 4683573.0469
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 5, 
+        "COD_SIG" : "5000612010001114", 
+        "IDTIPO" : "999", 
+        "INF_NOME" : "Medeia Monumental", 
+        "INF_MORADA" : "Avenida Fontes Pereira de Melo 51 R/C", 
+        "INF_TELEFONE" : "21 314 22 23", 
+        "INF_FAX" : null, 
+        "INF_EMAIL" : null, 
+        "INF_SITE" : "www.medeiafilmes.com", 
+        "INF_DESCRICAO" : "Localizado no Centro Comercial Monumental. Possui 4 salas (entre as quais 1 Cine-teatro)e um total de 885 lugares.\n", 
+        "INF_FONTE" : "www.medeiafilmes.com", 
+        "INF_MUNICIPAL" : 0, 
+        "DTM_UPD" : 1343396019000, 
+        "GlobalID" : "3a1094db-fef3-4c53-a334-284aa051898f"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 6, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -1017960.4017, 4684828.2514
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 6, 
+        "COD_SIG" : "2304406003002097", 
+        "IDTIPO" : "999", 
+        "INF_NOME" : "Cinema City Campo Pequeno Praça de Touros", 
+        "INF_MORADA" : "Campo Pequeno Centro de Lazer", 
+        "INF_TELEFONE" : "21 798 14 20", 
+        "INF_FAX" : null, 
+        "INF_EMAIL" : "campopequeno@cinemacity.pt", 
+        "INF_SITE" : "www.cinemacity.pt", 
+        "INF_DESCRICAO" : "Possui oito salas, com um total de 1176 lugares.\n", 
+        "INF_FONTE" : "www.cinemacity.pt", 
+        "INF_MUNICIPAL" : 0, 
+        "DTM_UPD" : 1377531591000, 
+        "GlobalID" : "c873672c-04a5-4b4d-9429-78d2fe4c506b"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 7, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -1018164.5021, 4681684.564
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 7, 
+        "COD_SIG" : "1401011012001001", 
+        "IDTIPO" : "999", 
+        "INF_NOME" : "Cinema São Jorge", 
+        "INF_MORADA" : "Avenida da Liberdade, 175", 
+        "INF_TELEFONE" : "+351 213 103 400", 
+        "INF_FAX" : null, 
+        "INF_EMAIL" : "cinemasaojorge@egeac.pt", 
+        "INF_SITE" : "http://cinemasaojorge.pt/", 
+        "INF_DESCRICAO" : "Um dos mais emblemáticos cinemas de Lisboa, construído,no final dos anos 40 do séc. XX, por iniciativa da Sociedade Anglo-Portuguesa de Cinemas, com projeto do arq. Fernando Silva,foi inaugurado em 1950. A sua inovação e arrojo valeram-lhe a atribuição por unanimidade do Prémio Municipal de Arquitectura desse ano. Considerado uma ''obra moderna'', afastando-se do modelo nacionalista então em vigor, adotou novas técnicas construtivas,das quais se destaca o betão, que permitiram novas soluções estruturais e decorativas. Em 2000 o imóvel veio à posse camarária. Após uma intervenção na fachada e remodelação no interior, reabriu em novembro de 2001. Desde essa data funciona com uma atividade regular de exibição de filmes (comerciais e antestreias), para além de acolher Festivais e outros eventos de grande visibilidade. \n", 
+        "INF_FONTE" : "http://cinemasaojorge.pt/", 
+        "INF_MUNICIPAL" : 1, 
+        "DTM_UPD" : 1520509893000, 
+        "GlobalID" : "55b3bba7-dc22-43a2-a8d5-ca1a3706888c"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 8, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -1018434.6803, 4681768.1118
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 8, 
+        "COD_SIG" : "1401009042001002", 
+        "IDTIPO" : "999", 
+        "INF_NOME" : "Cinemateca Portuguesa ", 
+        "INF_MORADA" : "Rua Barata Salgueiro, 39 R/C", 
+        "INF_TELEFONE" : "+ 351 213 596 200", 
+        "INF_FAX" : null, 
+        "INF_EMAIL" : "cinemateca@cinemateca.pt", 
+        "INF_SITE" : "www.cinemateca.pt/", 
+        "INF_DESCRICAO" : "Em 1948 foi criada a Cinemateca Nacional, hoje Cinemateca Portuguesa-Museu do Cinema, com o objetivo de preservar e difundir a Sétima Arte (Cinema Português em particular).\n\nInstalada num palacete do séc.XIX, dispõe de 2 salas de cinema: sala Dr.Félix Ribeiro e sala Luís de Pina.", 
+        "INF_FONTE" : "-", 
+        "INF_MUNICIPAL" : 0, 
+        "DTM_UPD" : 1518022189000, 
+        "GlobalID" : "214a5aaf-bad8-4b07-8452-642e882d7937"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 9, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -1018952.716, 4683547.036
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 9, 
+        "COD_SIG" : "5001405001001003", 
+        "IDTIPO" : "999", 
+        "INF_NOME" : "UCI Cinemas - El Corte Inglés", 
+        "INF_MORADA" : "Avenida António Augusto de Aguiar, 31", 
+        "INF_TELEFONE" : "+351 213 801 4 00", 
+        "INF_FAX" : null, 
+        "INF_EMAIL" : "administrative@ucicinemas.pt", 
+        "INF_SITE" : "www.ucicinemas.pt", 
+        "INF_DESCRICAO" : "Situadas no El Corte Inglês. Possui 14 salas com um total de 2698 lugares.\n", 
+        "INF_FONTE" : "www.ucicinemas.pt", 
+        "INF_MUNICIPAL" : 0, 
+        "DTM_UPD" : 1520440916000, 
+        "GlobalID" : "9fffe9ec-5848-4cf8-a678-560b2179120d"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 10, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -1019766.4725, 4687680.4075
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 10, 
+        "COD_SIG" : "1804202001001014", 
+        "IDTIPO" : "999", 
+        "INF_NOME" : "NOS Alvaláxia", 
+        "INF_MORADA" : "Alvaláxia Shopping e Lazer - Complexo XXI\nRua Francisco Stromp ", 
+        "INF_TELEFONE" : "16996", 
+        "INF_FAX" : null, 
+        "INF_EMAIL" : "cinema.alvalaxia@nos.pt", 
+        "INF_SITE" : "http://cinemas.nos.pt/", 
+        "INF_DESCRICAO" : "Situadas no Estádio José Alvalade - Alvaláxia Shopping & Lazer. Possui 12 salas. \n", 
+        "INF_FONTE" : "http://cinemas.nos.pt/", 
+        "INF_MUNICIPAL" : 0, 
+        "DTM_UPD" : 1437492512000, 
+        "GlobalID" : "1194edd8-b863-4ea4-96ea-8795b2e1b328"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 11, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -1017702.0391, 4681009.4573
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 11, 
+        "COD_SIG" : "3100403047001001", 
+        "IDTIPO" : "999", 
+        "INF_NOME" : "Cinemateca Júnior", 
+        "INF_MORADA" : "Praça dos Restauradores, Palácio da Foz", 
+        "INF_TELEFONE" : "+351 213 462 157 | +351 213 476 129", 
+        "INF_FAX" : null, 
+        "INF_EMAIL" : "cinemateca.junior@cinemateca.pt", 
+        "INF_SITE" : "http://www.cinemateca.pt/", 
+        "INF_DESCRICAO" : "A Cinemateca Júnior, instalada no Palácio Foz, é um serviço da Cinemateca Portuguesa-Museu do Cinema direcionado para os espectadores infantis e juvenis.", 
+        "INF_FONTE" : "http://www.cinemateca.pt/", 
+        "INF_MUNICIPAL" : 0, 
+        "DTM_UPD" : 1518088164000, 
+        "GlobalID" : "9be8c8c6-82d5-4c41-b43f-65ef89b78036"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 12, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -1019920.6018, 4682166.7016
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 12, 
+        "COD_SIG" : "3001402014001188", 
+        "IDTIPO" : "999", 
+        "INF_NOME" : "NOS Amoreiras", 
+        "INF_MORADA" : "Avenida Engenheiro Duarte Pacheco Lote 7 2º Loja 2052", 
+        "INF_TELEFONE" : "16996", 
+        "INF_FAX" : null, 
+        "INF_EMAIL" : "cinema.amoreiras@nos.pt", 
+        "INF_SITE" : "http://cinemas.nos.pt/", 
+        "INF_DESCRICAO" : "Possui 7 salas\n", 
+        "INF_FONTE" : "http://cinemas.nos.pt/", 
+        "INF_MUNICIPAL" : 0, 
+        "DTM_UPD" : 1437493114000, 
+        "GlobalID" : "cba170f4-7da0-4c06-95e6-56857bec46a1"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 13, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -1017951.1841, 4686552.1743
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 13, 
+        "COD_SIG" : "4200802035001001", 
+        "IDTIPO" : "999", 
+        "INF_NOME" : "Cinema City Classic Alvalade", 
+        "INF_MORADA" : "Avenida de Roma 100 R/C\n1700-352 Lisboa", 
+        "INF_TELEFONE" : "+351 218 413 040", 
+        "INF_FAX" : null, 
+        "INF_EMAIL" : "alvalade@cinemacity.pt", 
+        "INF_SITE" : "www.cinemacity.pt", 
+        "INF_DESCRICAO" : "Possui quatro salas, com um total de 389 lugares.", 
+        "INF_FONTE" : "www.cinemacity.pt", 
+        "INF_MUNICIPAL" : 0, 
+        "DTM_UPD" : 1377531604000, 
+        "GlobalID" : "b8a3ee90-444d-4248-9060-c8863d664651"
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 14, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -1023123.3853, 4686601.8992
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 14, 
+        "COD_SIG" : "1101112002001034", 
+        "IDTIPO" : "999", 
+        "INF_NOME" : "NOS Colombo", 
+        "INF_MORADA" : "C.C. Colombo - Av Lusiadas, Loja A 203", 
+        "INF_TELEFONE" : "16996", 
+        "INF_FAX" : null, 
+        "INF_EMAIL" : "cinema.colombo@nos.pt", 
+        "INF_SITE" : "http://cinemas.nos.pt/", 
+        "INF_DESCRICAO" : "Localizado no Centro Comercial Colombo.Possui 10 salas com um total de 2481 lugares.\n", 
+        "INF_FONTE" : "http://cinemas.nos.pt/", 
+        "INF_MUNICIPAL" : 0, 
+        "DTM_UPD" : 1437493289000, 
+        "GlobalID" : "79bf52b5-c8c5-4d9d-8c9e-d94fb4b93a24"
+      }
+    }
+  ]
+}
