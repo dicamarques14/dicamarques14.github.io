@@ -1,53 +1,109 @@
 {
-    "directory_revision":{
-        "settings" :{
-            "network" : "",
-            "region" : "",
-            "nodes" : ["",""], 
-            "level" : {
-                "type" : "",
-                "options":{"client" : "","start_date":"","end_date":""}
+    "directory_revision": {
+        "settings": {
+            "uid": 1,
+            "network": 1,
+            "region": 87,
+            "nodes": [64], 
+            "level": {
+                "type": 1,
+                "options": {
+                    "aggregator": 1,
+                    "financial_validation": true,
+                    "client": "509721478",
+                    "start_date": "17-05-2018",
+                    "end_date": "18-05-2018"
+                }
             },
-            "publish_state" : ""
+            "publish_state": 1
         },
 
-        "activity_hours" : [
-            {"start_time":"","end_time":"","weekday":["",""]}
+        "activity_hours": [
+            {
+                "start_time": "09:00",
+                "end_time": "18:00",
+                "weekday": ["1","2","3","4","5","6"]
+            }
         ],
-        "categories" : ["",""],
-        "accessible" : 1,
-        "highlight" : 1,
+        "categories": [
+            {
+                "category_id": 42,
+                "main_category": true
+            },
+            {
+                "category_id": 43,
+                "main_category": false
+            }
+        ],
+        "accessible": 1,
+        "highlight": 1,
+
         "contacts":{
-            "phone" : 232111111,
-            "email" : "aaa@aaa.com",
-            "email_backup" : "aaa@aaa.com",
-            "website" : "www.aaa.com",
-            "address" : "Street n1",
-            "latitude" : "",
-            "longitude" : ""
+            "phone": "",
+            "email": "",
+            "email_backup": "",
+            "website": "",
+            "address": "",
+            "latitude": "",
+            "longitude": ""
         },
 
         "images" : [
-            {"path":"","featured_image":""}
         ],
-
 
         "name":[
-            {"lang":"pt","text":"Café"}
+            {
+                "lang": "pt-pt",
+                "text": "Teste TESTE"
+            },
+            {
+                "lang": "en-us",
+                "text": "Test TEST"
+            }
         ],
         "description" : [
-            {"lang":"pt","text":"Bom Café"}
+            {
+                "lang": "pt-pt",
+                "text": "Bom Teste 1"
+            },
+            {
+                "lang": "en-us",
+                "text": "Good Test 1"
+            }
         ],
         "tags" : [
-            {"lang":"pt","items":["cafe","cha"]}
+            {
+                "lang": "pt-pt",
+                "items": ["teste", "TESTE"]
+            },
+            {
+                "lang": "en-us",
+                "items": ["test", "TEST"]
+            }
         ],
         "qr_code": [
-            {"lang":"pt", "label" : "" , "content" : ""},
-            {"lang":"pt", "label" : "" , "content" : ""}
+            {
+                "lang": "pt-pt",
+                "label": "teste" ,
+                "content": "teste teste teste"
+            },
+            {
+                "lang": "en-us",
+                "label": "test" ,
+                "content": "test test test"
+            }
         ],
-        
         "meta": [
-            {"category":"", "value":""}
+            {
+                "lang": "pt-pt",
+                "category": 1,
+                "value": "4"
+            },
+            {
+                "lang": "en-us",
+                "category": 1,
+                "value": "4"
+            }
         ]
     }
 }
