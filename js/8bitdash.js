@@ -593,7 +593,13 @@ window.onload = function() {
     dash.previousBackground()});
     window.u.sm("using-left");
   Mousetrap.bind("g", function() {
-    window.location.href = "https://www.github.com"
+    window.location.href = "https://www.google.com"
+  });
+  Mousetrap.bind("k", function() {
+    window.location.href = "https://keep.google.com"
+  });
+  Mousetrap.bind("i", function() {
+    window.location.href = "https://imgur.com"
   });
   Mousetrap.bind("r", function() {
     window.location.href = "https://www.reddit.com"
@@ -623,7 +629,7 @@ window.onload = function() {
     window.location.href = "https://www.twitter.com"
   });
   Mousetrap.bind("d", function() {
-    window.location.href = "https://www.digg.com"
+    window.location.href = "https://drive.google.com"
   });
   Mousetrap.bind("e", function() {
     window.location.href = "https://www.ebay.com"
