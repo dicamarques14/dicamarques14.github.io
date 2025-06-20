@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Editor de Provas</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 6px;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        select,
+        button {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        tr.dragging {
+            background-color: #eef;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            white-space: pre-wrap;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+
+<body>
+    <h1>Editor de Provas</h1>
+    <div>
+        <input type="file" id="fileInput" accept="application/json">
+        <button onclick="exportarJSON()">Exportar JSON Atualizado</button>
+    </div>
+    <div>
+        <label><strong>Seleciona a prova:</strong></label>
+        <select id="provaSelect"></select>
+        <button id="addProva">Add New Prova</button>
+    </div>
+    <div id="infoProva"></div>
+    <div id="tabelaConjuntos"></div>
+
+
+    <script>
+
+        let dados = [
+            {
+                nome: "Meh1",
+                tipo: "TempoIdeal",
+                tempoIdeal: "01:10",
+                conjuntos: [
+
+                ]
+            }
+        ];
+
+        let provaAtualIndex = 0;
+        const provaSelect = document.getElementById("provaSelect");
+        const infoProva = document.getElementById("infoProva");
+        const tabelaConjuntos = document.getElementById("tabelaConjuntos");
+        const jsonOutput = document.getElementById("jsonOutput");
+
+        // Preenche o select
+        updProvaSelect();
+        //mudar de prova
+        provaSelect.addEventListener("change", e => {
+            provaAtualIndex = parseInt(e.target.value);
+            mostrarProva(provaAtualIndex);
+        });
+
+
+
+        $('#addProva').on('click', function () {
+            const newProva = {
+                nome: "NovaProva",
+                tipo: "TempoIdeal",//Cronometro
+                tempoIdeal: "01:10",
+                conjuntos: [
+                ]
+            };
+            dados.push(newProva);
+            updProvaSelect();
+        });
+
+        function mostrarProva(index) {
+            const prova = dados[index];
+
+            infoProva.innerHTML = `
+        <p><strong>Nome:</strong> <input type="text" value="${prova.nome}" onchange="dados[${index}].nome = this.value; atualizarSelect()" /></p>
+        <p><strong>Tipo:</strong> <select id="provaTipo" value="${prova.tipo}"> <option value="TempoIdeal">TempoIdeal</option> <option value="Cronometro">Cronometro</option> </select></p>
+        <p><strong>Tempo Ideal:</strong> <input type="text" value="${prova.tempoIdeal}" onchange="dados[${index}].tempoIdeal = this.value" /></p>
+      `;
+
+            const linhas = prova.conjuntos.map((c, i) => {
+                return `
+          <tr data-index="${i}">
+            <td class="id-cell">${c.id}</td>
+            <td><input type="text" value="${c.cavaleiro}" onchange="dados[${index}].conjuntos[${i}].cavaleiro = this.value" /></td>
+            <td><input type="text" value="${c.cavalo}" onchange="dados[${index}].conjuntos[${i}].cavalo = this.value" /></td>
+            <td><button class="deleteConjunto">Delete</button></td>
+          </tr>
+        `;
+            }).join("");
+
+            tabelaConjuntos.innerHTML = `
+        <table id="conjuntosTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Cavaleiro</th>
+              <th>Cavalo</th>
+              <th><button class="addConjunto">Add Conjunto</button></th>
+            </tr>
+          </thead>
+          <tbody>${linhas}</tbody>
+        </table>
+      `;
+            $('#conjuntosTable').on('click', '.deleteConjunto', function () {
+                const conjuntoIndex = $(this).closest('tr').data('index');
+                dados[provaAtualIndex].conjuntos.splice(conjuntoIndex, 1);
+                mostrarProva(provaAtualIndex);
+            });
+
+            $('#conjuntosTable').on('click', '.addConjunto', function () {
+                const newConjunto = {
+                    id: dados[provaAtualIndex].conjuntos.length + 1,
+                    cavaleiro: '',
+                    cavalo: '',
+                    TabelaA: { tempo: "00:00.00", pontos: 0, desclassificado: false, inUse: true },
+                    TabelaB: { tempo: "00:00.00", pontos: 0, desclassificado: false, inUse: false }
+                };
+                dados[provaAtualIndex].conjuntos.push(newConjunto);
+                mostrarProva(provaAtualIndex);
+            });
+
+            $('#provaTipo').val(dados[provaAtualIndex].tipo);
+            $('#provaTipo').on("change", (event) => {
+                dados[provaAtualIndex].tipo = event.target.value;
+            });
+
+            // Tornar linhas arrastáveis
+            new Sortable(document.querySelector("#conjuntosTable tbody"), {
+                animation: 150,
+                onEnd: (evt) => {
+                    const moved = prova.conjuntos.splice(evt.oldIndex, 1)[0];
+                    prova.conjuntos.splice(evt.newIndex, 0, moved);
+
+                    // Atualiza os IDs e DOM após reordenação
+                    prova.conjuntos.forEach((c, i) => c.id = i + 1);
+                    mostrarProva(index); // Refresh UI
+                }
+            });
+        }
+
+        function exportarJSON() {
+            // Save changes to a file
+            const jsonString = JSON.stringify(dados, null, 2);
+            const blob = new Blob([jsonString], { type: 'application/json' });
+            saveAs(blob, 'provas.json');
+        }
+
+        function atualizarSelect() {
+            // Atualiza os nomes no dropdown após alteração do nome da prova
+            Array.from(provaSelect.options).forEach((opt, i) => {
+                opt.textContent = dados[i].nome;
+            });
+        }
+
+
+        // Load data from a file
+        document.getElementById('fileInput').addEventListener('change', function (event) {
+            console.log('fileInput:change');
+
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    try {
+                        const loadedProvas = JSON.parse(e.target.result);
+                        if (Array.isArray(loadedProvas)) {
+                            dados = loadedProvas;
+
+                            updProvaSelect();
+
+                            console.log('fileInput:upd');
+                            atualizarSelect();
+                            console.log('fileInput:show');
+                            mostrarProva(0);
+                        } else {
+                            alert('Invalid file format');
+                        }
+                    } catch (error) {
+                        alert('Error parsing file');
+                    }
+                };
+                reader.readAsText(file);
+            }
+
+        });
+
+        function updProvaSelect() {
+            for (a in provaSelect.options) { provaSelect.options.remove(0); }
+
+            // Preenche o select
+            dados.forEach((prova, i) => {
+                const option = document.createElement("option");
+                option.value = i;
+                option.textContent = prova.nome;
+                provaSelect.appendChild(option);
+            });
+        }
+
+        // Inicialização
+        mostrarProva(0);
+    </script>
+</body>
+
+</html>
