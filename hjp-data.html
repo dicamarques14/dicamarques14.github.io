@@ -110,7 +110,13 @@
 
             infoProva.innerHTML = `
         <p><strong>Nome:</strong> <input type="text" value="${prova.nome}" onchange="dados[${index}].nome = this.value; atualizarSelect()" /></p>
-        <p><strong>Tipo:</strong> <select id="provaTipo" value="${prova.tipo}"> <option value="TempoIdeal">TempoIdeal</option> <option value="Cronometro">Cronometro</option> </select></p>
+        <p><strong>Tipo:</strong>
+            <select id="provaTipo" value="${prova.tipo}">
+                <option value="TempoIdeal">Tempo Ideal</option>
+                <option value="Cronometro">Cronometro</option>
+                <option value="CronometroBarrage">Cronometro c/ Barrage</option>
+            </select>
+        </p>
         <p><strong>Tempo Ideal:</strong> <input type="text" value="${prova.tempoIdeal}" onchange="dados[${index}].tempoIdeal = this.value" /></p>
       `;
 
